@@ -4,13 +4,13 @@ from django.conf import settings
 
 
 def index(request):
-    return HttpResponse("hello world")
+    return HttpResponse("hi this is home page")
 
 def about(request):
-    return HttpResponse("hi")
+    return HttpResponse("hi this is about page")
 
-def test(request):
-    return HttpResponse("test")
+def contact(request):
+    return HttpResponse("hi this is contact page")
 
 def home(request):
     return HttpResponse('finally done some part')
