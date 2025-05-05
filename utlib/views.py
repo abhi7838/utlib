@@ -1,13 +1,14 @@
 from django.http import request, HttpResponse
+from django.shortcuts import render
 import os
 from django.conf import settings
 
 
-def index(request):
-    return HttpResponse("hi this is home page")
-
-def about(request):
-    return HttpResponse("hi this is about page")
+def removepunc(request):
+    # return HttpResponse("hi this is home page")
+    # print(request.GET.get('text','default'))
+    return render(request,'index.html')
+    print(text)
 
 def contact(request):
     return HttpResponse("hi this is contact page")
