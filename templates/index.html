@@ -1,66 +1,17 @@
-{% comment %} <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Text Utils</title>
+    <title>Text Analyzer</title>
 </head>
-<body>
-<h1>Welcome to the text analyzer. Enter your text below</h1>
-<form action='/analyze' method='get'>
-    <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
-
-    <input type="checkbox" name="removepunc"> Remove Punctuations<br>
-    <button type='submit'> Analyze Text</button>
-
-</form>
-</body> {% endcomment %}
-
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Text analyser</title>
-</head>
-<body>
-    <form action = '/removepunc' method = 'post'> 
-    <h1>Welcome to text analyser:Please enter your text</h1>
-    <textarea name = 'text' style="height: 300px; width: 1500px;">  </textarea>
-    <br>
-    <button type = 'submit'> Analyze text </button>
-
-</form>
-
-</body>
-</html> 
-
-
-
-
-
-
-
-
-{% comment %} <!DOCTYPE html>
-<html>
-    <head> 
-        <meta charset = "UTF-8">
-        <title> text analyser </title>
-
-
-
-    </head>
 
 <body>
-
-<h1>Welcome to text analyser:Please enter your text</h1>
-<form action = '/removepunc' method = 'get'> 
-
-<textarea name = 'text' style="height: 300px; width: 1500px;">  </textarea>
-<br>
-<button type = 'submit'> Analyze text </button>
-
-</form>
+    <h1>Welcome to text analyzer:Please Enter your text here</h1>
+    <form action = '/analyze' method = 'get'>   
+        <textarea name = 'text' style = 'margin: 0px; height: 300px; width:1500px;'> </textarea><br>
+        <input type = 'checkbox' name= 'removepunc'> Remove Punctuations<br>
+        <button type = 'submit'> Analyze Text </button>
+    </form>
 
 </body>
 </html>
-    {% endcomment %}
